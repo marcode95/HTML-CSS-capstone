@@ -18,43 +18,49 @@
 
     <!-- header -->
 
-    <header>
+    <header class="container-fluid row no-gutters px-0 darkgray-bc">
 
         <!-- header left -->
 
-        <div class="header-left">
-            <i class="fas fa-gamepad"></i>
-            <p class="header-brand-name">Pro Con</p>
+        <div class="header-left d-sm-none d-md-flex order-2 order-md-1 col-6 col-md-3 flex jc-center ai-center px-sm-3">
+            <i class="fas fa-gamepad gamepad-logo winered"></i>
+            <p class="header-brand-name lightgray fw-bold ml-3 mt-1">PRO CON</p>
         </div>
 
         <!-- header middle -->
 
-        <div class="header-middle">
+        <!-- this version appears on bigger screen -->
+
+        <div class="header-middle d-none d-sm-flex order-md-2 col-9 col-md-6 justify-content-start justify-content-md-center ai-center px-sm-3">
             <div class="header-middle-home">
-                <i class="fas fa-home"></i>
-                <a href="#">Home</a>
+                <a href="#"><i class="fas fa-home"></i> Home</a>
             </div>
-            <div class="header-middle-custom">
-                <i class="fas fa-tools"></i>
-                <a href="#">Custom made</a>
+            <div class="header-middle-custom mx-4">
+                <a href="#"><i class="fas fa-tools"></i> Custom made</a>
             </div>
             <div class="header-middle-purchase">
-                <i class="fas fa-shopping-cart"></i>
-                <a href="#">Purchase list</a>
+                <a href="#"><i class="fas fa-shopping-cart"></i> Purchase list</a>
             </div>
+        </div>
+
+        <!-- this version appears on smaller screen -->
+
+        <div class="d-sm-none order-1 col flex jc-center ai-center">
+            <a href="#"><i class="fas fa-bars"></i></a>
         </div>
 
         <!-- header right -->
 
-        <div class="header-right">
-            <div class="header-right-envelope">
-                <i class="fas fa-envelope"></i>
-                <div class="header-right-number-block">
-                    <p class="header-right-number"></p>
+        <div class="header-right order-3 col col-md-3 flex justify-content-center justify-content-sm-end justify-content-md-center ai-center px-sm-3">
+            <div class="header-right-envelope position-relative">
+                <a href="#"><i class="fas fa-envelope"></i></a> 
+                <div class="header-right-number-block winered-bc d-flex jc-center ai-center">
+                    <p class="header-right-number text-white fw-bold">2</p>
                 </div>
             </div>
-            <p class="header-right-name">Some Dude</p>
+            <p class="header-right-name d-none d-sm-inline-block lightgray ml-3">Some Dude</p>
         </div>
+        
     </header>
 
     <!-- showcase -->

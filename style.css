@@ -1,0 +1,97 @@
+
+/* global */
+
+body p {
+  font-family: helvetica, arial, sans-serif;
+}
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.flex {
+  display: flex;
+}
+
+.jc-center {
+  justify-content: center;
+}
+
+.ai-center {
+  align-items: center;
+}
+
+.winered {
+  color: #d35266; 
+}
+
+.winered-bc {
+  background-color: #d35266; 
+}
+
+.lightgray {
+  color: #888888;
+}
+  
+.lightgray-bc {
+  background-color: #888888;
+}
+
+.darkgray {
+  color: #383838;
+}
+    
+.darkgray-bc {
+  background-color: #383838;
+}
+
+.fw-bold {
+  font-weight: 900;
+}
+
+header i {
+  font-size: 20px;
+}
+
+.gamepad-logo {
+  font-size: 30px;
+}
+
+/* links */
+
+header a {
+  color: #888888;
+  font-family: helvetica, arial, sans-serif;
+}
+
+/* hover */
+
+header a:hover {
+  color: #d35266;
+  text-decoration: none;
+}
+
+/* header */
+
+header {
+  height: 50px;
+}
+
+.header-brand-name {
+  font-size: 20px;
+}
+
+.header-right-number-block {
+  position: absolute;
+  height: 13px;
+  width: 13px;
+  top: -4px;
+  right: -8px;
+  padding-top: 4px;
+}
+
+.header-right-number {
+  font-size: 12px;
+}
