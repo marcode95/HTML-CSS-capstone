@@ -22,7 +22,7 @@
 
         <!-- header left -->
 
-        <div class="header-left d-sm-none d-md-flex order-2 order-md-1 col-6 col-md-3 flex jc-center ai-center px-sm-3">
+        <div class="header-left d-sm-none d-md-flex order-2 order-md-1 col-6 col-md-3 flex jc-center ai-center px-sm-3 px-md-0">
             <i class="fas fa-gamepad gamepad-logo winered"></i>
             <p class="header-brand-name lightgray fw-bold ml-3 mt-1">PRO CON</p>
         </div>
@@ -31,7 +31,7 @@
 
         <!-- this version appears on bigger screen -->
 
-        <div class="header-middle d-none d-sm-flex order-md-2 col-9 col-md-6 justify-content-start justify-content-md-center ai-center px-sm-3">
+        <div class="header-middle d-none d-sm-flex order-md-2 col-9 col-md-6 justify-content-start justify-content-md-center ai-center px-sm-3 px-md-0">
             <div class="header-middle-home">
                 <a href="#"><i class="fas fa-home"></i> Home</a>
             </div>
@@ -51,7 +51,7 @@
 
         <!-- header right -->
 
-        <div class="header-right order-3 col col-md-3 flex justify-content-center justify-content-sm-end justify-content-md-center ai-center px-sm-3">
+        <div class="header-right order-3 col col-md-3 flex justify-content-center justify-content-sm-end justify-content-md-center ai-center px-sm-3 px-md-0">
             <div class="header-right-envelope position-relative">
                 <a href="#"><i class="fas fa-envelope"></i></a> 
                 <div class="header-right-number-block winered-bc d-flex jc-center ai-center">
@@ -66,10 +66,10 @@
     <!-- showcase -->
 
     <div class="showcase">
-        <h1>Pro Con</h1>
-        <p class="showcase-subheading">Get the perfect Smash Bros. Melee Controller for you</p>
+        <h1 class="helvetica fw-bold mb-2">PRO CON</h1>
+        <p class="showcase-subheading mb-5">Get your perfect Smash Bros. Melee Controller</p>
         <div class="showcase-search">
-            <select name="Color" id="search-color">
+            <select name="Color" class="showcase-search-fields mb-3" id="search-color">
                 <option value="any"><p>Any Color</p></option>
                 <option value="white"><p>Basic White</p></option>
                 <option value="black"><p>Old black</p></option>
@@ -77,7 +77,7 @@
                 <option value="platinum"><p>Platinum (rare)</p></option>
                 <option value="emerald"><p>Emerald blue (very rare)</p></option>
             </select>
-            <select name="Color" id="search-custom">
+            <select name="Color" class="showcase-search-fields mb-3" id="search-custom">
                 <option value="any"><p>Any Add-ons</p></option>
                 <option value="button"><p>Decreased Button Height</p></option>
                 <option value="snapback"><p>Snapback Removal</p></option>
@@ -85,8 +85,8 @@
                 <option value="stickbox"><p>Stickbox Replacement</p></option>
                 <option value="trigger"><p>Trigger Depression</p></option>
             </select>
-            <input type="text" placeholder="keyword">
-            <a href="#">Search</a>
+            <input class="showcase-search-fields mb-3" type="text" placeholder="Keyword">
+            <a href="#" class="showcase-search-button showcase-search-fields">Search</a>
         </div>
     </div>
 
