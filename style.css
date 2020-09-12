@@ -86,7 +86,9 @@ header i {
 }
 
 .selling-article-container {
-  background-color: rgb(241, 241, 241);
+  background-color: rgb(245, 245, 245);
+  margin-top: 40px;
+  padding-top: 20px;
 }
 
 .plus-symbol-link i {
@@ -250,10 +252,12 @@ header {
   font-size: 25px;
 }
 
-/* basic controllers */
+/* basic controllers & add-ons */
 
 .basic-controllers {
   margin-top: 80px;
+  max-width: 1140px;
+  margin: 0 auto;
 }
 
 .item-container {
