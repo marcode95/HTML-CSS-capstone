@@ -3,12 +3,23 @@
 
 body p {
   font-family: helvetica, arial, sans-serif;
+  line-height: normal;
+}
+
+body h2 {
+  font-size: 20px;
 }
 
 * {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+}
+
+main {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 10px;
 }
 
 .flex {
@@ -74,10 +85,23 @@ header a {
   font-family: helvetica, arial, sans-serif;
 }
 
+.customer-reviews-sub-headline a{
+  color: #d35266;
+  text-decoration: none;
+}
+
 /* hover */
 
 header a:hover {
   color: #d35266;
+  text-decoration: none;
+}
+
+.customer-reviews h2 a:hover {
+  color: #888;
+}
+
+.customer-reviews-button:hover {
   text-decoration: none;
 }
 
@@ -133,6 +157,27 @@ header {
   background-color: white;
 }
 
+/* customer reviews */
+
+.customer-reviews-img {
+  width: 100%;
+  max-width: 500px;
+}
+
+.customer-reviews-description {
+  width: 100%;
+  max-width: 500px;  
+  text-align: center;
+}
+
+.customer-reviews-sub-headline {
+  font-size: 22px;
+}
+
+.customer-reviews-button {
+  padding: 14px 18px;
+}
+
 /* media query */
 
 @media only screen and (min-width: 768px) {
@@ -160,4 +205,8 @@ header {
       height: 60px;
       min-width: 150px;
     }
+
+    /* customer reviews */
+
+
   }
