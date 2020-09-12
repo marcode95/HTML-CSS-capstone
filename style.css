@@ -4,6 +4,7 @@
 body p {
   font-family: helvetica, arial, sans-serif;
   line-height: normal;
+  color: #383838;
 }
 
 body h2 {
@@ -78,6 +79,10 @@ header i {
   flex-direction: column;
 }
 
+.text-align-center {
+  text-align: center;
+}
+
 /* links */
 
 header a {
@@ -103,6 +108,11 @@ header a:hover {
 
 .customer-reviews-button:hover {
   text-decoration: none;
+}
+
+.chevron-circle:hover {
+  box-shadow: 0 0 8px 4px rgba(211, 82, 101, .5);
+  transform: scale(1.1);
 }
 
 /* header */
@@ -137,8 +147,9 @@ header {
   align-items: center;
   background-image:
   linear-gradient(to bottom,rgb(211, 82, 101, 0.8), rgb(211, 82, 101, 0.8)),
-  url(images/showcase.png);
-  background-position: 30% 50%;
+  url(images/showcase.jpg);
+  background-position: 100% 50%;
+  background-size: cover;
 }
 
 .showcase h1 {
@@ -161,13 +172,12 @@ header {
 
 .customer-reviews-img {
   width: 100%;
-  max-width: 500px;
+  max-width: 400px;
 }
 
 .customer-reviews-description {
   width: 100%;
-  max-width: 500px;  
-  text-align: center;
+  max-width: 400px;  
 }
 
 .customer-reviews-sub-headline {
@@ -178,6 +188,41 @@ header {
   padding: 14px 18px;
 }
 
+.chevron-circle {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  border: 2px solid #888;
+  border-radius: 50%;
+  transition: all 0.2s ease-in-out;
+}
+
+.chevron-left {
+  position: absolute;
+  top: 15px;
+  right: 23px;
+  font-size: 25px;
+}
+
+.chevron-right {
+  position: absolute;
+  top: 15px;
+  right: 19px;
+  font-size: 25px;
+}
+
+/* basic controllers */
+
+
+
+
+
+
+
+
+
+
+
 /* media query */
 
 @media only screen and (min-width: 768px) {
@@ -187,8 +232,8 @@ header {
     .showcase {
       padding-top: 100px;
       padding-bottom: 60px;
-      background-position: 30% 72%;
-      background-size: 150%;
+      background-position: 100% 40%;
+      background-size: cover;
     }
 
     .showcase h1 {
@@ -208,5 +253,16 @@ header {
 
     /* customer reviews */
 
+    .customer-reviews-container {
+      flex-direction: row;
+      align-items: flex-start;
+    }
 
+    .customer-reviews-description {
+      text-align: left;
+    }
+
+    .customer-reviews-sub-headline {
+      font-size: 26px;
+    }
   }
