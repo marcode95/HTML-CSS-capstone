@@ -87,6 +87,10 @@ header i {
   text-align: center;
 }
 
+.selling-article-container {
+  background-color: rgb(241, 241, 241);
+}
+
 .plus-symbol-link i {
   font-size: 18px;
   animation: color-change 1s infinite;
@@ -250,16 +254,30 @@ header {
 
 /* basic controllers */
 
+.basic-controllers {
+  margin-top: 80px;
+}
+
+.item-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 30px;
+}
+
 .item-container h3 {
   font-family: helvetica, arial, sans-serif;
-  font-weight: 900;
   color: #888;
-  font-size: 18px;
+  font-size: 16px;
+}
+
+.item-description {
+  font-size: 13px;
 }
 
 .item-section {
   padding: 15px;
   max-width: 300px;
+  background-color: white;
 }
 
 .item-image {
