@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pro Con</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="reset.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9a2f12287f.js" crossorigin="anonymous">
+    </script>
+</head>
+
+<body>
+
+    <!-- header -->
+
+    <header class="container-fluid row no-gutters px-0 darkgray-bc">
+
+        <!-- header left -->
+
+        <div class="header-left d-sm-none d-md-flex order-2 order-md-1 col-6 col-md-3 flex jc-center ai-center px-sm-3 px-md-0">
+            <i class="fas fa-gamepad gamepad-logo winered"></i>
+            <p class="header-brand-name lightgray fw-bold ml-3 mt-1">PRO CON</p>
+        </div>
+
+        <!-- header middle -->
+
+        <!-- this version appears on bigger screen -->
+
+        <div class="header-middle d-none d-sm-flex order-md-2 col-9 col-md-6 justify-content-start justify-content-md-center ai-center px-sm-3 px-md-0">
+            <div class="header-middle-home">
+                <a href="#"><i class="fas fa-home"></i> Home</a>
+            </div>
+            <div class="header-middle-custom mx-4">
+                <a href="#"><i class="fas fa-tools"></i> Custom made</a>
+            </div>
+            <div class="header-middle-purchase">
+                <a href="#"><i class="fas fa-shopping-cart"></i> Purchase list</a>
+            </div>
+        </div>
+
+        <!-- this version appears on smaller screen -->
+
+        <div class="d-sm-none order-1 col flex jc-center ai-center">
+            <a href="#"><i class="fas fa-bars"></i></a>
+        </div>
+
+        <!-- header right -->
+
+        <div class="header-right order-3 col col-md-3 flex justify-content-center justify-content-sm-end justify-content-md-center ai-center px-sm-3 px-md-0">
+            <div class="header-right-envelope position-relative">
+                <a href="#"><i class="fas fa-envelope"></i></a> 
+                <div class="header-right-number-block winered-bc d-flex jc-center ai-center">
+                    <p class="header-right-number text-white fw-bold">2</p>
+                </div>
+            </div>
+            <p class="header-right-name d-none d-sm-inline-block lightgray ml-3">Some Dude</p>
+        </div>
+        
+    </header>
+
+    <!-- showcase -->
+
+    <div class="showcase text-align-center">
+        <h1 class="helvetica fw-bold mb-2 text-white">PRO CON</h1>
+        <p class="showcase-subheading mb-5 text-white">Get your perfect Smash Bros. Melee Pro Controller</p>
+        <div class="showcase-search w-100 flex fd-column ai-center">
+            <select name="Color" class="showcase-search-fields mb-3 mb-md-0 mr-md-3" id="search-color">
+                <option value="any"><p>Any Color</p></option>
+                <option value="white"><p>Basic White</p></option>
+                <option value="black"><p>Old black</p></option>
+                <option value="blue"><p>Classic Blue</p></option>
+                <option value="platinum"><p>Platinum (rare)</p></option>
+                <option value="emerald"><p>Emerald blue (very rare)</p></option>
+            </select>
+            <select name="Color" class="showcase-search-fields mb-3 mb-md-0 mr-md-3" id="search-custom">
+                <option value="any"><p>Any Add-ons</p></option>
+                <option value="button"><p>Decreased Button Height</p></option>
+                <option value="snapback"><p>Snapback Removal</p></option>
+                <option value="notches"><p>Shield Drop Notches</p></option>
+                <option value="stickbox"><p>Stickbox Replacement</p></option>
+                <option value="trigger"><p>Trigger Depression</p></option>
+            </select>
+            <input class="showcase-search-fields mb-3 mb-md-0 mr-md-3" type="text" placeholder="Keyword">
+            <a href="#" class="showcase-search-button showcase-search-fields d-flex jc-center ai-center"><p class="showcase-search-button-test">Search</p></a>
+        </div>
+    </div>
+
+    <!-- main -->
+
+    <main>
+
+        <!-- div containing both sidebar and search results  -->
+
+        <div class="big-sidebar-article-container">
+
+            <!-- sidebar  -->
+
+            <div class="sidebar">
+
+                <h3>TYPE</h3>
+                <div class="thin-line"></div>
+                <form>
+                    <input type="checkbox" id="basic" name="basic" value="basic">
+                    <label for="basic"> Basic</label><br>
+                    <input type="checkbox" id="pre-customized" name="pre-customized" value="pre-customized">
+                    <label for="pre-customized"> Pre-Customized</label><br>
+                </form>
+
+                <h3>EXTRAS</h3>
+                <div class="thin-line"></div>
+                <form>
+                    <input type="checkbox" id="led" name="led" value="led">
+                    <label for="led"> LED's</label><br>
+                    <input type="checkbox" id="print" name="print" value="print">
+                    <label for="print"> Special Print</label><br>
+                </form>
+
+                <h3>PRICE</h3>
+                <div class="thin-line"></div>
+                <form>
+                    <input type="checkbox" id="100" name="100" value="100">
+                    <label for="100"> 0€ - 100€</label><br>
+                    <input type="checkbox" id="200" name="200" value="200">
+                    <label for="200"> 100€ - 200€</label><br>
+                    <input type="checkbox" id="300" name="300" value="300">
+                    <label for="300"> 200€ - 300€</label><br>
+                    <input type="checkbox" id="400" name="400" value="400">
+                    <label for="400"> +300€</label><br>
+                </form>
+
+            </div>
+
+            <!-- article containing search results with some item-x classes from index.html "basic controllers" section -->
+
+            <article class="results">
+                <img src="https://gaminggadgets.de/wp-content/uploads/2015/08/shinewave.jpg" alt="gamecube controller">
+                <div class="results-description">
+                    <h3 class="my-2">Rare Emerald Blue Controller with Angled F-Tilt Notches</h3>
+                    <p class="item-availability mb-2">available</p>
+                    <p class="item-description mb-4">You won't miss another input with this bad boy</p>
+                    <div class="results-date-price-container">
+                        <p>13.09.2020</p>
+                        <a class="customer-reviews-button helvetica text-white winered-bc rounded" href="#">Purchase Similar</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- footer -->
+
+    <footer class="px-2 pt-4 pb-5 d-none">
+
+        <!-- left footer -->
+
+        <div class="left-footer text-align-center mx-auto">
+            <div class="left-footer-logo mb-3">
+                <i class="fas fa-gamepad gamepad-logo winered"></i>
+                <p class="header-brand-name d-inline lightgray fw-bold ml-3 mt-1">PRO CON</p>
+            </div>
+            <p class="left-footer-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime officiis adipisci culpa voluptatem fuga eveniet, doloremque neque corporis tempore nulla rerum velit, odio dolore laboriosam? Laboriosam dolores voluptas dolore cupiditate placeat corporis, voluptatum excepturi odio ipsam nisi repudiandae.
+            </p>
+        </div>
+
+        <!-- middle footer -->
+
+        <div class="middle-footer text-align-center mt-4">
+            <ul class="w-100">
+                <li><h3 class="footer-headlines helvetica fw-bold winered mb-2 pb-1">Navigation</h3></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sign In</a></li>
+                <li><a href="#">Sign Out</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Help</a></li>
+            </ul>
+        </div>
+
+        <!-- right footer -->
+
+        <div class="right-footer text-align-center mt-4">
+            <ul class="w-100">
+                <li><h3 class="footer-headlines helvetica fw-bold winered mb-2 pb-1">Languages</h3></li>
+                <li><a href="#">Deutsch</a></li>
+                <li><a href="#">Dan Najeriya</a></li>
+                <li><a href="#">Română</a></li>
+                <li><a href="#">Kiswahili</a></li>
+                <li><a href="#">اردو</a></li>
+                <li><a href="#">日本語</a></li>
+            </ul>
+        </div>
+
+    </footer>
+
+
+
+</body>
