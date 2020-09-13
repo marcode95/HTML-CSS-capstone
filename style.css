@@ -17,10 +17,6 @@ body h2 {
   box-sizing: border-box;
 }
 
-main {
-  padding: 0 10px;
-}
-
 .flex {
   display: flex;
 }
@@ -316,6 +312,28 @@ header {
   font-size: 20px;
 }
 
+/* footer */
+
+.left-footer {
+  max-width: 400px;
+}
+
+.footer-headlines {
+  font-size: 18px;
+  border-bottom: 1px solid #d35266;
+}
+
+.middle-footer a,
+.right-footer a{
+  color: #383838;
+  font-family: helvetica, arial, sans-serif;
+}
+
+.middle-footer li,
+.right-footer li {
+  margin-bottom: 6px;
+}
+
 /* media query */
 
 @media only screen and (min-width: 768px) {
@@ -357,5 +375,31 @@ header {
 
     .customer-reviews-sub-headline {
       font-size: 26px;
+    }
+
+    /* customer reviews */
+
+    footer {
+      display: grid !important;
+      grid-template-columns: 1fr 50% 1fr;
+    }
+
+    .middle-footer {
+      order: 1;
+    }
+
+    .left-footer {
+      order: 2;
+      max-width: 600px;
+    }
+
+    .right-footer {
+      order: 3;
+    }
+
+    .footer-headlines {
+      font-size: 18px;
+      display: inline-block;
+      border-bottom: 1px solid #d35266;
     }
   }
