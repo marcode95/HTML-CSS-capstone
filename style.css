@@ -1,3 +1,5 @@
+/* Especially in the basic controllers & add on sections I used several repeated classes. This was done on purpose, since they apply to sometimes more than
+10 elements. A summarized class would just mean more and less clear code in those cases.*/
 
 /* global */
 
@@ -34,17 +36,17 @@ body h2 {
 }
 
 .winered {
-  color: #d35266; 
+  color: #d35266;
 }
 
 .winered-bc {
-  background-color: #d35266; 
+  background-color: #d35266;
 }
 
 .lightgray {
   color: #888888;
 }
-  
+
 .lightgray-bc {
   background-color: #888888;
 }
@@ -52,7 +54,7 @@ body h2 {
 .darkgray {
   color: #383838;
 }
-    
+
 .darkgray-bc {
   background-color: #383838;
 }
@@ -97,9 +99,15 @@ header i {
 }
 
 @keyframes color-change {
-  0% { color: #d35266; }
-  50% { color: #888; }
-  100% { color: #d35266; }
+  0% {
+    color: #d35266;
+  }
+  50% {
+    color: #888;
+  }
+  100% {
+    color: #d35266;
+  }
 }
 
 /* links */
@@ -109,7 +117,7 @@ header a {
   font-family: helvetica, arial, sans-serif;
 }
 
-.customer-reviews-sub-headline a{
+.customer-reviews-sub-headline a {
   color: #d35266;
   text-decoration: none;
 }
@@ -119,7 +127,7 @@ header a {
   padding: 7.5px 9px;
 }
 
-.item-menu-field a{
+.item-menu-field a {
   color: #383838;
   text-decoration: none;
 }
@@ -145,7 +153,7 @@ header a:hover {
 }
 
 .chevron-circle:hover {
-  box-shadow: 0 0 8px 4px rgba(211, 82, 101, .5);
+  box-shadow: 0 0 8px 4px rgba(211, 82, 101, 0.5);
   transform: scale(1.1);
 }
 
@@ -191,9 +199,12 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image:
-  linear-gradient(to bottom,rgb(211, 82, 101, 0.8), rgb(211, 82, 101, 0.8)),
-  url(images/showcase.jpg);
+  background-image: linear-gradient(
+      to bottom,
+      rgb(211, 82, 101, 0.8),
+      rgb(211, 82, 101, 0.8)
+    ),
+    url(images/showcase.jpg);
   background-position: 100% 50%;
   background-size: cover;
 }
@@ -228,7 +239,7 @@ header {
 
 .customer-reviews-description {
   width: 100%;
-  max-width: 400px;  
+  max-width: 400px;
 }
 
 .customer-reviews-sub-headline {
@@ -340,7 +351,7 @@ header {
 }
 
 .middle-footer a,
-.right-footer a{
+.right-footer a {
   color: #383838;
   font-family: helvetica, arial, sans-serif;
 }
@@ -378,93 +389,91 @@ header {
 /* media query */
 
 @media only screen and (min-width: 768px) {
+  /* showcase */
 
-    /* showcase */
-
-    .showcase {
-      padding-top: 100px;
-      padding-bottom: 60px;
-      background-position: 100% 40%;
-      background-size: cover;
-    }
-
-    .showcase h1 {
-      font-size: 80px;
-    }
-
-    .showcase-search {
-      flex-direction: row;
-      align-items: flex-start;
-      justify-content: center;
-    }
-
-    .showcase-search-fields {
-      height: 60px;
-      min-width: 150px;
-    }
-
-    /* customer reviews */
-
-    .customer-reviews-container {
-      flex-direction: row;
-      align-items: flex-start;
-    }
-
-    .customer-reviews-description {
-      text-align: left;
-    }
-
-    .customer-reviews-sub-headline {
-      font-size: 26px;
-    }
-
-    /* customer reviews */
-
-    footer {
-      display: grid !important;
-      grid-template-columns: 1fr 50% 1fr;
-    }
-
-    .middle-footer {
-      order: 1;
-    }
-
-    .left-footer {
-      order: 2;
-      max-width: 600px;
-    }
-
-    .right-footer {
-      order: 3;
-    }
-
-    .footer-headlines {
-      font-size: 18px;
-      display: inline-block;
-      border-bottom: 1px solid #d35266;
-    }
-
-    /* search-results-page */
-
-    .sidebar {
-      width: 300px;
-      border: 1px solid lightgray;
-      margin-top: 40px;
-    }
-
-    .results-section {
-      max-width: 100%;
-      padding: 22px;
-    }
-
-    .results-img {
-      max-width: 300px;
-      flex-shrink: 0;
-    }
-    
-    .results-section-headline {
-      font-size: 20px;
-      font-weight: bold;
-    }
-    
+  .showcase {
+    padding-top: 100px;
+    padding-bottom: 60px;
+    background-position: 100% 40%;
+    background-size: cover;
   }
+
+  .showcase h1 {
+    font-size: 80px;
+  }
+
+  .showcase-search {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .showcase-search-fields {
+    height: 60px;
+    min-width: 150px;
+  }
+
+  /* customer reviews */
+
+  .customer-reviews-container {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .customer-reviews-description {
+    text-align: left;
+  }
+
+  .customer-reviews-sub-headline {
+    font-size: 26px;
+  }
+
+  /* customer reviews */
+
+  footer {
+    display: grid !important;
+    grid-template-columns: 1fr 50% 1fr;
+  }
+
+  .middle-footer {
+    order: 1;
+  }
+
+  .left-footer {
+    order: 2;
+    max-width: 600px;
+  }
+
+  .right-footer {
+    order: 3;
+  }
+
+  .footer-headlines {
+    font-size: 18px;
+    display: inline-block;
+    border-bottom: 1px solid #d35266;
+  }
+
+  /* search-results-page */
+
+  .sidebar {
+    width: 300px;
+    border: 1px solid lightgray;
+    margin-top: 40px;
+  }
+
+  .results-section {
+    max-width: 100%;
+    padding: 22px;
+  }
+
+  .results-img {
+    max-width: 300px;
+    flex-shrink: 0;
+  }
+
+  .results-section-headline {
+    font-size: 20px;
+    font-weight: bold;
+  }
+}
