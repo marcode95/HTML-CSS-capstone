@@ -95,7 +95,7 @@ header i {
 
 .showcase-search-button {
   background-color: white;
-  padding-left: 0;
+  padding-left: 0 !important;
 }
 
 .customer-reviews-button {
