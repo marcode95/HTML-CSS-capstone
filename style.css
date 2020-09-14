@@ -1,5 +1,5 @@
 /* Especially in the basic controllers & add on sections I used several repeated classes. This was done on purpose, since they apply to sometimes more than
-10 elements. A summarized class would just mean more and less clear code in those cases.*/
+10 elements. A summarized class would just mean more and less clear code in those cases. */
 
 /* global */
 
@@ -44,11 +44,11 @@ body h2 {
 }
 
 .lightgray {
-  color: #888888;
+  color: #888;
 }
 
 .lightgray-bc {
-  background-color: #888888;
+  background-color: #888;
 }
 
 .darkgray {
@@ -93,6 +93,29 @@ header i {
   background-color: rgb(245, 245, 245);
 }
 
+.showcase-search-button {
+  background-color: white;
+  padding-left: 0;
+}
+
+.customer-reviews-button {
+  padding: 14px 18px;
+}
+
+.chevron-circle {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  border: 2px solid #888;
+  border-radius: 50%;
+  transition: all 0.2s ease-in-out;
+}
+
+.item-menu-field {
+  height: 40px;
+  font-family: helvetica, arial, sans-serif;
+}
+
 .plus-symbol-link i {
   font-size: 18px;
   animation: color-change 1s infinite;
@@ -102,9 +125,11 @@ header i {
   0% {
     color: #d35266;
   }
+
   50% {
     color: #888;
   }
+
   100% {
     color: #d35266;
   }
@@ -113,7 +138,7 @@ header i {
 /* links */
 
 header a {
-  color: #888888;
+  color: #888;
   font-family: helvetica, arial, sans-serif;
 }
 
@@ -130,6 +155,12 @@ header a {
 .item-menu-field a {
   color: #383838;
   text-decoration: none;
+}
+
+.middle-footer a,
+.right-footer a {
+  color: #383838;
+  font-family: helvetica, arial, sans-serif;
 }
 
 /* hover */
@@ -199,11 +230,12 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: linear-gradient(
-      to bottom,
-      rgb(211, 82, 101, 0.8),
-      rgb(211, 82, 101, 0.8)
-    ),
+  background-image: 
+  linear-gradient(
+    to bottom,
+  rgb(211, 82, 101, 0.8),
+  rgb(211, 82, 101, 0.8)
+  ),
     url(images/showcase.jpg);
   background-position: 100% 50%;
   background-size: cover;
@@ -225,11 +257,6 @@ header {
   color: #383838;
 }
 
-.showcase-search-button {
-  background-color: white;
-  padding-left: 0;
-}
-
 /* customer reviews */
 
 .customer-reviews-img {
@@ -244,19 +271,6 @@ header {
 
 .customer-reviews-sub-headline {
   font-size: 22px;
-}
-
-.customer-reviews-button {
-  padding: 14px 18px;
-}
-
-.chevron-circle {
-  position: relative;
-  width: 60px;
-  height: 60px;
-  border: 2px solid #888;
-  border-radius: 50%;
-  transition: all 0.2s ease-in-out;
 }
 
 .chevron-left {
@@ -276,9 +290,8 @@ header {
 /* basic controllers & add-ons */
 
 .basic-controllers {
-  margin-top: 80px;
   max-width: 1140px;
-  margin: 0 auto;
+  margin: 50px auto 0 auto;
 }
 
 .item-container {
@@ -314,10 +327,6 @@ header {
   color: #d35266;
 }
 
-.plus-symbol-link:focus + .item-menu {
-  display: block;
-}
-
 .item-menu {
   display: none;
   position: absolute;
@@ -328,9 +337,8 @@ header {
   left: 0;
 }
 
-.item-menu-field {
-  height: 40px;
-  font-family: helvetica, arial, sans-serif;
+.plus-symbol-link:focus + .item-menu {
+  display: block;
 }
 
 .item-price {
@@ -348,12 +356,6 @@ header {
 .footer-headlines {
   font-size: 18px;
   border-bottom: 1px solid #d35266;
-}
-
-.middle-footer a,
-.right-footer a {
-  color: #383838;
-  font-family: helvetica, arial, sans-serif;
 }
 
 .middle-footer li,
