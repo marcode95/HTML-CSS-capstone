@@ -8,6 +8,10 @@
 
 An HTML and CSS project of an electronics shop called PRO CON selling gamecube controllers. Flex, Grid, Bootstrap and Animations were used. The site is responsive and has a phone/tablet and a desktop version.
 
+## Video presentation
+
+https://www.loom.com/share/d32dc4fe537b423e86a77ef4f7585635
+
 ## Live demo
 
 🔗 [PRO CON website](https://raw.githack.com/marcode95/HTML-CSS-capstone/feature/index.html)
