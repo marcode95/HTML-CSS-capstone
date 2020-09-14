@@ -472,6 +472,7 @@ header {
   .results-img {
     max-width: 300px;
     flex-shrink: 0;
+    object-fit: cover;
   }
 
   .results-section-headline {
