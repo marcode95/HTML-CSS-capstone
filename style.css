@@ -324,8 +324,8 @@ header {
   width: 200px;
   border: 1px solid #888;
   background-color: white;
-  top: -129px;
-  left: 35px;
+  bottom: -5px;
+  left: 0;
 }
 
 .item-menu-field {
