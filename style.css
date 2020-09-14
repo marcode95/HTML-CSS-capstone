@@ -233,8 +233,8 @@ header {
   background-image:
     linear-gradient(
       to bottom,
-    rgb(211, 82, 101, 0.8),
-    rgb(211, 82, 101, 0.8)
+     rgb(211, 82, 101, 0.8),
+     rgb(211, 82, 101, 0.8)
     ),
     url(images/showcase.jpg);
   background-position: 100% 50%;
