@@ -200,6 +200,10 @@ header a:hover {
   color: #383838;
 }
 
+header .item-menu-field a:hover {
+  color:  #383838;
+}
+
 /* header */
 
 header {
@@ -223,6 +227,19 @@ header {
   font-size: 12px;
 }
 
+.hamburger-icon:focus + .item-menu {
+  display: block;
+}
+
+header .item-menu {
+  top: 50px;
+  left: 0px;
+}
+
+header .item-menu-field {
+  background-color: white;
+}
+
 /* showcase */
 
 .showcase {
@@ -242,7 +259,7 @@ header {
 }
 
 .showcase h1 {
-  font-size: 60px;
+  font-size: 10vw;
 }
 
 .showcase-search-fields {
@@ -412,10 +429,6 @@ header {
     background-size: cover;
   }
 
-  .showcase h1 {
-    font-size: 80px;
-  }
-
   .showcase-search {
     flex-direction: row;
     align-items: flex-start;
@@ -494,7 +507,7 @@ header {
 }
 
   /* Extra media query for the slider buttons in the main selling section. They shall only appear when the five articles are in one row as it wouldn't make 
-  sense to add them on smaller screens too. */
+  sense to add them on smaller screens too */
 
 @media only screen and (min-width: 1320px) {
 
