@@ -121,6 +121,20 @@ header i {
   animation: color-change 1s infinite;
 }
 
+header .item-menu-field {
+  background-color: white;
+}
+
+.item-menu {
+  display: none;
+  position: absolute;
+  width: 200px;
+  border: 1px solid #888;
+  background-color: white;
+  bottom: -5px;
+  left: 0;
+}
+
 @keyframes color-change {
   0% {
     color: #d35266;
@@ -201,7 +215,7 @@ header a:hover {
 }
 
 header .item-menu-field a:hover {
-  color:  #383838;
+  color: #383838;
 }
 
 /* header */
@@ -227,17 +241,13 @@ header {
   font-size: 12px;
 }
 
-.hamburger-icon:focus + .item-menu {
-  display: block;
-}
-
 header .item-menu {
   top: 50px;
-  left: 0px;
+  left: 0;
 }
 
-header .item-menu-field {
-  background-color: white;
+.hamburger-icon:focus + .item-menu {
+  display: block;
 }
 
 /* showcase */
@@ -342,16 +352,6 @@ header .item-menu-field {
 .item-availability {
   font-weight: 900;
   color: #d35266;
-}
-
-.item-menu {
-  display: none;
-  position: absolute;
-  width: 200px;
-  border: 1px solid #888;
-  background-color: white;
-  bottom: -5px;
-  left: 0;
 }
 
 .plus-symbol-link:focus + .item-menu {
@@ -506,17 +506,16 @@ header .item-menu-field {
   }
 }
 
-  /* Extra media query for the slider buttons in the main selling section. They shall only appear when the five articles are in one row as it wouldn't make 
-  sense to add them on smaller screens too */
+/* Extra media query for the slider buttons in the main selling section. They shall only appear when the five articles are in one row as it wouldn't make 
+sense to add them on smaller screens too */
 
 @media only screen and (min-width: 1320px) {
-
   .chevron-circle-article-right {
     position: absolute;
     display: inline-block;
     top: 160px;
     right: -80px;
-    transform: scale(1.0);
+
   }
 
   .chevron-circle-article-left {
@@ -524,7 +523,5 @@ header .item-menu-field {
     display: inline-block;
     top: 160px;
     left: -80px;
-    transform: scale(1.0);
   }
-
 }
