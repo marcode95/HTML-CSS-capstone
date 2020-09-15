@@ -63,7 +63,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-All the credits for Design go to Mohammed Awad: https://www.behance.net/gallery/24796463/ZATTIX. You can reach Mohammed Awad here: https://www.behance.net/M_Awad.
+All the credits for [design](https://www.behance.net/gallery/24796463/ZATTIX) go to [Mohammed Awad](https://www.behance.net/M_Awad).
 
 ## 📝 License
 
