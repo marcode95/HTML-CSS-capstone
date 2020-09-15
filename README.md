@@ -1,10 +1,6 @@
 # Capstone Project HTML&CSS - Electronic Shop
 
-
-> This project was developed as a learning project part of the Microverse curriculum. All the credits for Design go to Mohammed Awad: https://www.behance.net/gallery/24796463/ZATTIX. You can reach Mohammed Awad here: https://www.behance.net/M_Awad. 
-
 ![screenshot of main page](./images/screenshot.png)
-![screenshot of search page](./images/screenshot1.png)
 
 An HTML and CSS project of an electronics shop called PRO CON selling gamecube controllers. Flex, Grid, Bootstrap and Animations were used. The site is responsive and has a phone/tablet and a desktop version.
 
@@ -67,7 +63,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Microverse for showing the way for this project to happen
+All the credits for Design go to Mohammed Awad: https://www.behance.net/gallery/24796463/ZATTIX. You can reach Mohammed Awad here: https://www.behance.net/M_Awad.
 
 ## 📝 License
 
