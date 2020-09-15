@@ -65,6 +65,3 @@ Give a ⭐️ if you like this project!
 
 All the credits for [design](https://www.behance.net/gallery/24796463/ZATTIX) go to [Mohammed Awad](https://www.behance.net/M_Awad).
 
-## 📝 License
-
-This project is [MIT](lic.url) licensed.

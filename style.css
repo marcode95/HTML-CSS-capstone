@@ -347,6 +347,14 @@ header {
   font-size: 20px;
 }
 
+.chevron-circle-article-right {
+  display: none;
+}
+
+.chevron-circle-article-left {
+  display: none;
+}
+
 /* footer */
 
 .left-footer {
@@ -479,4 +487,27 @@ header {
     font-size: 20px;
     font-weight: bold;
   }
+}
+
+  /* Extra media query for the slider buttons in the main selling section. They shall only appear when the five articles are in one row as it wouldn't make 
+  sense to add them on smaller screens too. */
+
+@media only screen and (min-width: 1320px) {
+
+  .chevron-circle-article-right {
+    position: absolute;
+    display: inline-block;
+    top: 160px;
+    right: -80px;
+    transform: scale(1.0);
+  }
+
+  .chevron-circle-article-left {
+    position: absolute;
+    display: inline-block;
+    top: 160px;
+    left: -80px;
+    transform: scale(1.0);
+  }
+
 }
