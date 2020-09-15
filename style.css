@@ -396,6 +396,10 @@ header {
   font-size: 14px;
 }
 
+.sidebar input {
+  margin-bottom: 13px;
+}
+
 /* media query */
 
 @media only screen and (min-width: 768px) {
