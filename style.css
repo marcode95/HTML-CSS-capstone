@@ -506,7 +506,7 @@ header .item-menu {
   }
 }
 
-/* Extra media query for the slider buttons in the main selling section. They shall only appear when the five articles are in one row as it wouldn't make 
+/* Extra media query for the slider buttons in the main selling section. They shall only appear when the five articles are in one row as it wouldn't make
 sense to add them on smaller screens too */
 
 @media only screen and (min-width: 1320px) {
@@ -515,7 +515,6 @@ sense to add them on smaller screens too */
     display: inline-block;
     top: 160px;
     right: -80px;
-
   }
 
   .chevron-circle-article-left {
